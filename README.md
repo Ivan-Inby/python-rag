@@ -2,8 +2,9 @@
 
 ## Description
 Retrieval-Augmented Generation (RAG) is a framework developed to enhance the accuracy and currency of large language models (LLMs)
+![rag](https://github.com/Ivan-Inby/python-rag/assets/170828399/e1aa4c92-e11a-4574-9229-dd0e22027748)
 
-In this project, I implemented the RAG method using Python and a local LLM running with LM Studio
+In this project, I implemented the RAG method using Python and a local LLM running with LM Studio.
 
 ## Installation
 
@@ -22,6 +23,8 @@ In this project, I implemented the RAG method using Python and a local LLM runni
    ```bash
     pip install -r requirements.txt
     ```
+>To run the application, you need to deploy a local server with LLM using LM Studio.
+>You can adapt the code for use with another LLM, for example ChatGPT.
 
 ## Preparing data
 1. Place your PDF files in the `data` folder inside the project.
@@ -37,13 +40,14 @@ In this project, I implemented the RAG method using Python and a local LLM runni
    ```bash
    python ask.py “Your question is here”
    ```
-       For example:
+    For example:
 
     ```bash
-    python ask.py “what is Gazebo?”
+    python ask.py “What is Wandering Monster?”
     ```
 
     The script will search the database, create a context based on the found data and send it to the language model to generate a response.
+    ![example](https://github.com/Ivan-Inby/python-rag/assets/170828399/7930ac32-b4af-4298-98f0-aa2512698ab4)
 
 ## Project structure
 - `create_database_pdf.py`: Script for creating a database from PDF files.
